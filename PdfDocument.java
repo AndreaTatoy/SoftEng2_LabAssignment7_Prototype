@@ -1,15 +1,15 @@
 package LabAssignment7_Prototype;
 
-public class PDFDocument implements Document {
+public class PdfDocument implements Document {
     private String fileName;
     private String author;
     private int pageCount;
 
-    public PDFDocument() {
+    public PdfDocument() {
         System.out.println("Creating a PDF Document prototype.");
     }
 
-    public PDFDocument(String fileName, String author, int pageCount) {
+    public PdfDocument(String fileName, String author, int pageCount) {
         this.fileName = fileName;
         this.author = author;
         this.pageCount = pageCount;
@@ -17,7 +17,7 @@ public class PDFDocument implements Document {
 
     @Override
     public Document clone() {
-        return new PDFDocument(fileName, author, pageCount);
+        return new PdfDocument(fileName, author, pageCount);
     }
 
     @Override
