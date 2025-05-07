@@ -1,12 +1,12 @@
 package LabAssignment7_Prototype;
 
 public class DocumentRegistry {
-    private PDFDocument pdfPrototype = new PDFDocument();
+    private PdfDocument pdfPrototype = new PdfDocument();
     private TextDocument textPrototype = new TextDocument();
     private SpreadsheetDocument spreadsheetPrototype = new SpreadsheetDocument();
 
-    public PDFDocument createPdf(String fileName, String author, int pages) {
-        PDFDocument doc = (PDFDocument) pdfPrototype.clone();
+    public PdfDocument createPdf(String fileName, String author, int pages) {
+        PdfDocument doc = (PdfDocument) pdfPrototype.clone();
         doc.setDetails(fileName, author, pages);
         return doc;
     }
